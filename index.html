@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spock rock game</title>
+    <!-- Link Favicon -->
+    <link rel="icon" href="favicon.png" />
+    <!-- Link Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- full container -->
+    <div class="game-container">
+      <!-- game header -->
+      <div class="game-header">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+      </div>
+      <!-- game content -->
+      <div class="game-content">
+        <!-- user content -->
+        <div class="user-content-1">
+          <div class="heading">
+            <h3 class="score-user">You-0</h3>
+            <span class="heading-user"></span>
+          </div>
+          <div class="game-icon-user">
+            <i
+              class="fa-solid fa-hand-back-fist rock"
+              onclick="selectGame('rock')"
+            ></i>
+            <i class="fa-solid fa-hand paper" onclick="selectGame('paper')"></i>
+            <i
+              class="fa-solid fa-hand-scissors scissors"
+              onclick="selectGame('scissors')"
+            ></i>
+            <i
+              class="fa-solid fa-hand-lizard lizard"
+              onclick="selectGame('lizard')"
+            ></i>
+            <i
+              class="fa-solid fa-hand-spock spock"
+              onclick="selectGame('spock')"
+            ></i>
+          </div>
+        </div>
+        <!-- computer content -->
+        <div class="user-content-2">
+          <div class="heading">
+            <h3 class="score-computer">Computer-0</h3>
+            <span class="heading-computer"></span>
+          </div>
+          <div class="game-icon-computer">
+            <i class="fa-solid fa-hand-back-fist computer-rock"></i>
+            <i class="fa-solid fa-hand computer-paper"></i>
+            <i class="fa-solid fa-hand-scissors computer-scissors"></i>
+            <i class="fa-solid fa-hand-lizard computer-lizard"></i>
+            <i class="fa-solid fa-hand-spock computer-spock"></i>
+          </div>
+        </div>
+        <!-- reset game -->
+        <div class="reset-btn">
+          <i
+            class="fa-solid fa-arrows-rotate"
+            onclick="resetAll()"
+            title="reset"
+          ></i>
+        </div>
+        <!-- game message -->
+        <div class="game-message-container">
+          <h2 class="game-message"></h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link Script -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

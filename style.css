@@ -1,0 +1,110 @@
+/* google font link  */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  width: 500px;
+  height: 600px;
+  background: white;
+  box-shadow: 0 10px 20px -5px rgb(0 0 0 / 50%);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.game-header {
+  background-color: dodgerblue;
+  margin: 0px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-content-1 span {
+  color: dodgerblue;
+}
+
+.user-content-2 span {
+  color: rgb(255, 30, 86);
+}
+.game-icon-user,
+.game-icon-computer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.game-icon-user i,
+.game-icon-computer i {
+  cursor: pointer;
+}
+.user-content-1 i {
+  font-size: 50px;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.user-content-2 i {
+  font-size: 50px;
+  color: rgb(255, 30, 86);
+  cursor: pointer;
+}
+
+.reset-btn i {
+  font-size: 40px;
+  margin-top: 40px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.game-message-container h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.selected {
+  color: black !important;
+}
+/* responsive CSS for mobile view */
+@media screen and (max-width: 500px) {
+  .game-container {
+    width: unset;
+    width: 95%;
+    height: unset;
+  }
+  .game-icon i {
+    margin: unset;
+  }
+  .game-icon {
+    text-align: center;
+  }
+}
