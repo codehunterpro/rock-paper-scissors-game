@@ -34,6 +34,7 @@ const choices = {
 
 function resetSelected() {
   stopConfetti();
+  removeConfetti();
   icons.forEach((i) => i.classList.remove("selected"));
 }
 
